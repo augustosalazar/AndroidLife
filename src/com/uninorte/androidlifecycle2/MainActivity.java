@@ -3,6 +3,7 @@ package com.uninorte.androidlifecycle2;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	protected String TAG = MainActivity.class.getSimpleName();
@@ -19,6 +20,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onStart() {
     	super.onStart();
+    	Toast.makeText(this, "onStart", Toast.LENGTH_LONG).show();
     	Log.d(TAG,"2.onStart");
     }
     
